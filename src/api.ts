@@ -5,3 +5,9 @@ export const fetchPikachu = async () => {
 
   return await api.getPokemonByName("pikachu");
 };
+
+export const fetchTogepi = async () => {
+  const api = new PokemonClient();
+
+  return await api.getPokemonByName("togepi");
+};

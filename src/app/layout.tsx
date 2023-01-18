@@ -1,5 +1,5 @@
 import { Inter } from "@next/font/google";
-import Provider from "./Provider";
+import Providers from "./Providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,10 +12,7 @@ export default function RootLayout({
     <html lang="en">
       <head />
       <body className={inter.className}>
-        {
-          /* @ts-expect-error Server Component */
-          <Provider>{children}</Provider>
-        }
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
